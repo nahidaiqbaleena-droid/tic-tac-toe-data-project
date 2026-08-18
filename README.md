@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project uses Python to build and analyze a functional Tic-Tac-Toe game. The minimum viable product simulates gameplay between two players who randomly select valid positions. It demonstrates one complete game and then simulates 100 games to examine wins by Player X, wins by Player O, draws, and the number of moves required to finish. The project applies functions, lists, loops, conditional logic, randomization, data collection, and visualization in a way that is accessible to both technical and nontechnical readers.
+This project uses Python to build and analyze a functional Tic-Tac-Toe game. The final experiment simulates 1,000 games between two players who randomly select valid positions. It examines wins by Player X, wins by Player O, draws, and the number of moves required to finish. The project applies functions, lists, loops, conditional logic, randomization, pandas data collection, validation, and visualization in a way that is accessible to both technical and nontechnical readers.
 
 ## Design
 
@@ -12,7 +12,7 @@ The current MVP includes simulated gameplay. Future versions can accept human in
 
 ## Data
 
-The program collects the following information from 100 simulated games:
+The program collects the following information from 1,000 simulated games:
 
 - Number of wins by Player X
 - Number of wins by Player O
@@ -34,21 +34,40 @@ Functions are used to display the board, identify valid moves, evaluate winning 
 - Git
 - GitHub
 - GitHub Desktop
+- pandas
 
 ## Communication
 
-The notebook combines Markdown explanations, readable Python code, printed gameplay, summary statistics, and a bar chart. These elements explain both the development process and the results of the simulation.
+The project combines Markdown explanations, readable Python code, printed gameplay, summary statistics, charts, a one-page written report, and presentation slides. These elements explain both the development process and the results of the simulation.
+
+## Key Results
+
+- Player X won 596 of 1,000 games (59.6%).
+- Player O won 272 games (27.2%).
+- 132 games ended in draws (13.2%).
+- The average game lasted 7.70 moves.
+
+Because X always moved first, the simulation shows a first-player advantage under random play. It is a reproducible baseline rather than proof that X always wins.
 
 ## Repository Structure
 
 ```text
 tic-tac-toe-data-project/
 ├── README.md
+├── PROJECT_WRITEUP.md
 ├── LICENSE
 ├── environment.yml
+├── data/
+│   └── tic_tac_toe_gameplay_data.csv
 ├── images/
-└── notebooks/
-    └── TicTacToe_MVP.ipynb
+│   └── gameplay_results.png
+├── notebooks/
+│   ├── TicTacToe_MVP.ipynb
+│   └── TicTacToe_Data_Acquisition.ipynb
+├── presentation/
+│   └── TicTacToe_Project_Presentation.pptx
+└── src/
+    └── tic_tac_toe_analysis.py
 ```
 
 ## Installation and Use
@@ -91,6 +110,13 @@ tic-tac-toe-data-project/
 - Compare random and strategic gameplay
 - Examine first-player advantage
 - Add more statistical visualizations
+
+## Final Project Materials
+
+- [Written project description](PROJECT_WRITEUP.md)
+- [Presentation slides](presentation/TicTacToe_Project_Presentation.pptx)
+- [Clean Python script](src/tic_tac_toe_analysis.py)
+- [Final gameplay dataset](data/tic_tac_toe_gameplay_data.csv)
 
 ## Author
 

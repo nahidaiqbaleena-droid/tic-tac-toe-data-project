@@ -4,4 +4,6 @@ channels:
 dependencies:
   - python=3.12
   - jupyter
+  - numpy
+  - pandas
   - matplotlib
